@@ -73,6 +73,11 @@ extern NSString *const WMControllerDidFullyDisplayedNotification;
 
 @protocol WMPageControllerDelegate <NSObject>
 @optional
+    
+/**
+ *  左右滑动
+ */
+- (void)pageController:(WMPageController *)pageController didScroll:(UIScrollView *)scrollView;
 
 /**
  *  Is allow user goto the index?
