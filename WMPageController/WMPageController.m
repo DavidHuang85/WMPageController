@@ -803,6 +803,11 @@ static NSInteger const kWMControllerCountUndefined = -1;
 
 #pragma mark - UIScrollView Delegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    //通知滚动
+    if (_delegate && [_delegate respondsToSelector:@selector(pageController:didScroll:)]) {
+        [_delegate pageController:self didScroll:scrollView];
+    }
+    
     if (![scrollView isKindOfClass:WMScrollView.class]) return;
     
     if (_shouldNotScroll || !_hasInited) return;
