@@ -1,3 +1,25 @@
+## 为何要fork一份
+因为wmPage用起来还是不错的，但有时需要自定义一些场景，所以fork一份，修修代码，然后自己项目中pod时填写此repo地址，就可以下载修改后的代码。如：
+> pod 'WMPageController', :git => "https://github.com/V5zhou/WMPageController.git"
+
+## 修改的地方及场景
+#### 1. 添加代理方法 
+``` Objective-c
+/**
+ *  左右滑动
+ */
+- (void)pageController:(WMPageController *)pageController didScroll:(UIScrollView *)scrollView;
+```
+  场景：我们在做左右滑动时，要通过滑动偏移量来修改自己界面上的一个view位置，所以通过此代理供偏移量外部读取。
+#### 2. 添加代理方法
+``` Objective-c
+/**
+ *  Is allow user goto the index?
+ */
+- (BOOL)pageController:(WMPageController *)pageController shouldEnterIndex:(NSInteger)index;
+```
+  场景：我们在左右滑动界面时，前三个界面不判定登录状态，第四个界面要求登录才能查看，否则弹出登录页面。于是就通过此代理return NO阻断滚动.
+
 # WMPageController <a href="https://github.com/wangmchn/WMPageController/blob/master/README_zh-CN.md">中文介绍</a>
 [![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
