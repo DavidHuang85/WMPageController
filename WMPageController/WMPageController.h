@@ -317,11 +317,6 @@ extern NSString *const WMControllerDidFullyDisplayedNotification;
 @property (nonatomic, assign) CGFloat menuViewContentMargin;
 
 /**
- *  左滑时同时启用其他手势，比如系统左滑、sidemenu左滑。默认 NO
-    (会引起一个小问题，第一个和最后一个控制器会变得可以斜滑, 还未解决)
- */
-@property (assign, nonatomic) BOOL otherGestureRecognizerSimultaneously;
-/**
  *  构造方法，请使用该方法创建控制器. 或者实现数据源方法. /
  *  Init method，recommend to use this instead of `-init`. Or you can implement datasource by yourself.
  *

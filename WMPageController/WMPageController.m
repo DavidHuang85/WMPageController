@@ -457,7 +457,6 @@ static NSInteger const kWMControllerCountUndefined = -1;
     scrollView.showsVerticalScrollIndicator = NO;
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.bounces = self.bounces;
-    scrollView.otherGestureRecognizerSimultaneously = self.otherGestureRecognizerSimultaneously;
     scrollView.scrollEnabled = self.scrollEnable;
     [self.view addSubview:scrollView];
     self.scrollView = scrollView;
