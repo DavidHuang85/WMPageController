@@ -363,8 +363,8 @@ static NSInteger const WMBadgeViewTagOffset = 1212;
         CGPoint badgeCenter = CGPointMake(item.frame.size.width/2 + item_text_size.width/2, item.frame.size.height/2 - item_text_size.height/2);
         
         CGRect badgeFrame = [self badgeViewAtIndex:index].frame;
-        badgeFrame.origin.x = badgeCenter.x;
-        badgeFrame.origin.y = badgeCenter.y;
+        badgeFrame.origin.x = badgeCenter.x - badgeFrame.size.width/2;
+        badgeFrame.origin.y = badgeCenter.y - badgeFrame.size.height/2;
         badgeFrame.origin.x += frame.origin.x;
         badgeView.frame = badgeFrame;
     }
