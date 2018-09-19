@@ -954,6 +954,14 @@ static NSInteger const kWMControllerCountUndefined = -1;
     }
 }
 
+- (UIView *)menuView:(WMMenuView *)menu badgeViewAtIndex:(NSInteger)index {
+    if (_delegate && [_delegate respondsToSelector:@selector(pageController:badgeViewAtIndex:)]) {
+        UIView *view = [_delegate pageController:self badgeViewAtIndex:index];
+        return view;
+    }
+    return nil;
+}
+
 #pragma mark - WMMenuViewDataSource
 - (NSInteger)numbersOfTitlesInMenuView:(WMMenuView *)menu {
     return self.childControllersCount;

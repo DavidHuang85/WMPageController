@@ -85,6 +85,11 @@ extern NSString *const WMControllerDidFullyDisplayedNotification;
 - (BOOL)pageController:(WMPageController *)pageController shouldEnterIndex:(NSInteger)index;
 
 /**
+ badge
+ */
+- (UIView *)pageController:(WMPageController *)pageController badgeViewAtIndex:(NSInteger)index;
+
+/**
  *  If the child controller is heavy, put some work in this method. This method will only be called when the controller is initialized and stop scrolling. (That means if the controller is cached and hasn't released will never call this method.)
  *
  *  @param pageController The parent controller (WMPageController)
