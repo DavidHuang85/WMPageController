@@ -966,7 +966,7 @@ static NSInteger const kWMControllerCountUndefined = -1;
     if (_dataSource && [_dataSource respondsToSelector:@selector(pageController:badgeNumberAtIndex:)]) {
         badgeNumber = [_dataSource pageController:self badgeNumberAtIndex:index];
     }
-    return [WMBadgeView createWithBadge:index];
+    return [WMBadgeView createWithBadge:badgeNumber];
 }
 
 #pragma mark - WMMenuViewDataSource
