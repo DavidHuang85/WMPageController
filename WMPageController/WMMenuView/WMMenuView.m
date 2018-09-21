@@ -360,13 +360,10 @@ static NSInteger const WMBadgeViewTagOffset = 1212;
         //计算item文本右上角位置
         WMMenuItem *item = (WMMenuItem *)[self viewWithTag:(WMMenuItemTagOffset + index)];
         CGSize item_text_size = [item.text sizeWithAttributes:@{NSFontAttributeName:item.font}];
-        CGPoint badgeCenter = CGPointMake(item.frame.size.width/2 + item_text_size.width/2, item.frame.size.height/2 - item_text_size.height/2);
+        CGPoint badgeOrigin = CGPointMake(item.frame.size.width/2 + item_text_size.width/2, item.frame.size.height/2 - item_text_size.height/2);
+        CGSize badgeSize = [self badgeViewAtIndex:index].frame.size;
         
-        CGRect badgeFrame = [self badgeViewAtIndex:index].frame;
-        badgeFrame.origin.x = badgeCenter.x - badgeFrame.size.width/2;
-        badgeFrame.origin.y = badgeCenter.y - badgeFrame.size.height/2;
-        badgeFrame.origin.x += frame.origin.x;
-        badgeView.frame = badgeFrame;
+        badgeView.frame = CGRectMake(badgeOrigin.x + frame.origin.x, badgeOrigin.y, badgeSize.width, badgeSize.height);
     }
 }
 

@@ -11,8 +11,9 @@
 #import "WMTableViewController.h"
 #import "WMViewController.h"
 #import "WMCollectionViewController.h"
+#import "WMBadgeView.h"
 
-@interface WMMainTableViewController ()
+@interface WMMainTableViewController ()<WMPageControllerDataSource>
 @property (nonatomic, strong) NSArray *styles;
 @end
 
@@ -146,7 +147,12 @@
     pageVC.postNotification = YES;
     pageVC.bounces = YES;
     pageVC.hidesBottomBarWhenPushed = YES;
+    pageVC.dataSource = self;
     return pageVC;
+}
+
+- (UIView *)pageController:(WMPageController *)pageController badgeViewAtIndex:(NSInteger)index {
+    return [WMBadgeView createWithBadge:1000];
 }
 
 - (WMPageController *)pageControllerStyleFlood {
