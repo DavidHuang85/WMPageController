@@ -955,8 +955,8 @@ static NSInteger const kWMControllerCountUndefined = -1;
 }
 
 - (UIView *)menuView:(WMMenuView *)menu badgeViewAtIndex:(NSInteger)index {
-    if (_delegate && [_delegate respondsToSelector:@selector(pageController:badgeViewAtIndex:)]) {
-        UIView *view = [_delegate pageController:self badgeViewAtIndex:index];
+    if (_dataSource && [_dataSource respondsToSelector:@selector(pageController:badgeViewAtIndex:)]) {
+        UIView *view = [_dataSource pageController:self badgeViewAtIndex:index];
         return view;
     }
     return nil;
