@@ -964,7 +964,10 @@ static NSInteger const kWMControllerCountUndefined = -1;
     //自定义badgeView未实现或者返回nil，则走默认。
     if (_dataSource && [_dataSource respondsToSelector:@selector(pageController:badgeNumberAtIndex:)]) {
         NSInteger badgeNumber = [_dataSource pageController:self badgeNumberAtIndex:index];
-        return [WMBadgeView createWithBadge:badgeNumber];
+        NSLog(@"hjl-1");
+        UIView *testView = [WMBadgeView createWithBadge:badgeNumber];
+        NSLog(@"hjl-2");
+        return testView;
     }
     return nil;
 }
