@@ -962,11 +962,11 @@ static NSInteger const kWMControllerCountUndefined = -1;
         if (badgeView) { return badgeView; }
     }
     //自定义badgeView未实现或者返回nil，则走默认。
-    NSInteger badgeNumber = 0;
     if (_dataSource && [_dataSource respondsToSelector:@selector(pageController:badgeNumberAtIndex:)]) {
-        badgeNumber = [_dataSource pageController:self badgeNumberAtIndex:index];
+        NSInteger badgeNumber = [_dataSource pageController:self badgeNumberAtIndex:index];
+        return [WMBadgeView createWithBadge:badgeNumber];
     }
-    return [WMBadgeView createWithBadge:badgeNumber];
+    return nil;
 }
 
 #pragma mark - WMMenuViewDataSource

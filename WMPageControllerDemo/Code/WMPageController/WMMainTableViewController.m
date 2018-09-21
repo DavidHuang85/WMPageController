@@ -168,6 +168,10 @@
     return pageVC;
 }
 
+- (NSInteger)pageController:(WMPageController *)pageController badgeNumberAtIndex:(NSInteger)index {
+    return arc4random()%200;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
