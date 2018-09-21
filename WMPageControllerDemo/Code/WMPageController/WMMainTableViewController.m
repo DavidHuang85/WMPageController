@@ -11,7 +11,6 @@
 #import "WMTableViewController.h"
 #import "WMViewController.h"
 #import "WMCollectionViewController.h"
-#import "WMBadgeView.h"
 
 @interface WMMainTableViewController ()<WMPageControllerDataSource>
 @property (nonatomic, strong) NSArray *styles;

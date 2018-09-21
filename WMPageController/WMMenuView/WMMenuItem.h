@@ -34,4 +34,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setSelected:(BOOL)selected withAnimation:(BOOL)animation;
 
 @end
+
+#pragma mark - badgeView
+@interface WMBadgeView : UILabel
+
+/**
+ 创建
+ */
++ (instancetype)createWithBadge:(NSInteger)badge;
+
+@end
+
 NS_ASSUME_NONNULL_END

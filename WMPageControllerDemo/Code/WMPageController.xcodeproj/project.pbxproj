@@ -33,7 +33,6 @@
 		4DAB33EF1C12C6D0004EA0A4 /* WMScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB33E71C12C6D0004EA0A4 /* WMScrollView.m */; };
 		4DAB33F01C12C6D0004EA0A4 /* WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB33EA1C12C6D0004EA0A4 /* WMPageController.m */; };
 		4DF1615B1C816E9F003553A6 /* WMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1615A1C816E9F003553A6 /* WMSecondViewController.m */; };
-		FC4C335821549E6500E0E2C3 /* WMBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4C335721549E6500E0E2C3 /* WMBadgeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,8 +89,6 @@
 		4DAB33EA1C12C6D0004EA0A4 /* WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPageController.m; sourceTree = "<group>"; };
 		4DF161591C816E9F003553A6 /* WMSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSecondViewController.h; sourceTree = "<group>"; };
 		4DF1615A1C816E9F003553A6 /* WMSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSecondViewController.m; sourceTree = "<group>"; };
-		FC4C335621549E6500E0E2C3 /* WMBadgeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMBadgeView.h; sourceTree = "<group>"; };
-		FC4C335721549E6500E0E2C3 /* WMBadgeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMBadgeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,8 +235,6 @@
 				4DAB33E51C12C6D0004EA0A4 /* WMProgressView.m */,
 				4DAB33E61C12C6D0004EA0A4 /* WMScrollView.h */,
 				4DAB33E71C12C6D0004EA0A4 /* WMScrollView.m */,
-				FC4C335621549E6500E0E2C3 /* WMBadgeView.h */,
-				FC4C335721549E6500E0E2C3 /* WMBadgeView.m */,
 			);
 			path = WMMenuView;
 			sourceTree = "<group>";
@@ -358,7 +353,6 @@
 				4DAB33F01C12C6D0004EA0A4 /* WMPageController.m in Sources */,
 				4D38F75C1B29CA4600203BC9 /* AppDelegate.m in Sources */,
 				4DAB33EE1C12C6D0004EA0A4 /* WMProgressView.m in Sources */,
-				FC4C335821549E6500E0E2C3 /* WMBadgeView.m in Sources */,
 				4D6BDF7E1B2DB3CE008282D1 /* WMCollectionViewController.m in Sources */,
 				4D6BDF7F1B2DB3CE008282D1 /* WMTableViewController.m in Sources */,
 				4D6BDF801B2DB3CE008282D1 /* WMViewController.m in Sources */,

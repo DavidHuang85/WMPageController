@@ -7,7 +7,6 @@
 //
 
 #import "WMPageController.h"
-#import "WMBadgeView.h"
 
 NSString *const WMControllerDidAddToSuperViewNotification = @"WMControllerDidAddToSuperViewNotification";
 NSString *const WMControllerDidFullyDisplayedNotification = @"WMControllerDidFullyDisplayedNotification";
