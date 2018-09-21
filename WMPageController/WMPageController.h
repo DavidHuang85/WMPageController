@@ -70,9 +70,14 @@ extern NSString *const WMControllerDidFullyDisplayedNotification;
 - (NSString *)pageController:(WMPageController *)pageController titleAtIndex:(NSInteger)index;
 
 /**
- badge
+ badgeNumber
  */
-- (UIView *)pageController:(WMPageController *)pageController badgeViewAtIndex:(NSInteger)index;
+- (NSInteger)pageController:(WMPageController *)pageController badgeNumberAtIndex:(NSInteger)index;
+
+/**
+ 自定义badge，如返回nil，则显示默认样式。
+ */
+- (UIView *)pageController:(WMPageController *)pageController customBadgeViewAtIndex:(NSInteger)index;
 
 @end
 

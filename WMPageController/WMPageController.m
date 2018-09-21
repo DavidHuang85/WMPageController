@@ -7,6 +7,7 @@
 //
 
 #import "WMPageController.h"
+#import "WMBadgeView.h"
 
 NSString *const WMControllerDidAddToSuperViewNotification = @"WMControllerDidAddToSuperViewNotification";
 NSString *const WMControllerDidFullyDisplayedNotification = @"WMControllerDidFullyDisplayedNotification";
@@ -955,11 +956,17 @@ static NSInteger const kWMControllerCountUndefined = -1;
 }
 
 - (UIView *)menuView:(WMMenuView *)menu badgeViewAtIndex:(NSInteger)index {
-    if (_dataSource && [_dataSource respondsToSelector:@selector(pageController:badgeViewAtIndex:)]) {
-        UIView *view = [_dataSource pageController:self badgeViewAtIndex:index];
-        return view;
+    //优先自定义badgeView;否则走默认
+    if (_dataSource && [_dataSource respondsToSelector:@selector(pageController:customBadgeViewAtIndex:)]) {
+        UIView *badgeView = [_dataSource pageController:self customBadgeViewAtIndex:index];
+        if (badgeView) { return badgeView; }
     }
-    return nil;
+    //自定义badgeView未实现或者返回nil，则走默认。
+    NSInteger badgeNumber = 0;
+    if (_dataSource && [_dataSource respondsToSelector:@selector(pageController:badgeNumberAtIndex:)]) {
+        badgeNumber = [_dataSource pageController:self badgeNumberAtIndex:index];
+    }
+    return [WMBadgeView createWithBadge:index];
 }
 
 #pragma mark - WMMenuViewDataSource
