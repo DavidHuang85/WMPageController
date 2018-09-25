@@ -25,6 +25,7 @@
     self.backgroundColor = [UIColor clearColor];
     self.textColor = [UIColor colorWithRed:255/255.0 green:67/255.0 blue:30/255.0 alpha:1/1.0];
     self.font = [UIFont fontWithName:@"PingFangSC-Semibold" size:12];
+    self.textAlignment = NSTextAlignmentCenter;
 }
 
 - (void)loadBadgeText:(NSInteger)badge {
