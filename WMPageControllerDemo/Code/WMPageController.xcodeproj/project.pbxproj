@@ -27,12 +27,13 @@
 		4D6BDF801B2DB3CE008282D1 /* WMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6BDF7D1B2DB3CE008282D1 /* WMViewController.m */; };
 		4D6BDF861B2DB3EE008282D1 /* WMImageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6BDF831B2DB3EE008282D1 /* WMImageViewCell.m */; };
 		4D6BDF871B2DB3EE008282D1 /* WMLoopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6BDF851B2DB3EE008282D1 /* WMLoopView.m */; };
-		4DAB33EC1C12C6D0004EA0A4 /* WMMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB33E11C12C6D0004EA0A4 /* WMMenuItem.m */; };
 		4DAB33ED1C12C6D0004EA0A4 /* WMMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB33E31C12C6D0004EA0A4 /* WMMenuView.m */; };
 		4DAB33EE1C12C6D0004EA0A4 /* WMProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB33E51C12C6D0004EA0A4 /* WMProgressView.m */; };
 		4DAB33EF1C12C6D0004EA0A4 /* WMScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB33E71C12C6D0004EA0A4 /* WMScrollView.m */; };
 		4DAB33F01C12C6D0004EA0A4 /* WMPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAB33EA1C12C6D0004EA0A4 /* WMPageController.m */; };
 		4DF1615B1C816E9F003553A6 /* WMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1615A1C816E9F003553A6 /* WMSecondViewController.m */; };
+		FC8EDB252159D22600F3AED9 /* WMBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8EDB212159D22500F3AED9 /* WMBadgeView.m */; };
+		FC8EDB262159D22600F3AED9 /* WMMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8EDB222159D22500F3AED9 /* WMMenuItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,8 +78,6 @@
 		4D6BDF831B2DB3EE008282D1 /* WMImageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMImageViewCell.m; sourceTree = "<group>"; };
 		4D6BDF841B2DB3EE008282D1 /* WMLoopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMLoopView.h; sourceTree = "<group>"; };
 		4D6BDF851B2DB3EE008282D1 /* WMLoopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMLoopView.m; sourceTree = "<group>"; };
-		4DAB33E01C12C6D0004EA0A4 /* WMMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMenuItem.h; sourceTree = "<group>"; };
-		4DAB33E11C12C6D0004EA0A4 /* WMMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMenuItem.m; sourceTree = "<group>"; };
 		4DAB33E21C12C6D0004EA0A4 /* WMMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMenuView.h; sourceTree = "<group>"; };
 		4DAB33E31C12C6D0004EA0A4 /* WMMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMenuView.m; sourceTree = "<group>"; };
 		4DAB33E41C12C6D0004EA0A4 /* WMProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMProgressView.h; sourceTree = "<group>"; };
@@ -89,6 +88,10 @@
 		4DAB33EA1C12C6D0004EA0A4 /* WMPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPageController.m; sourceTree = "<group>"; };
 		4DF161591C816E9F003553A6 /* WMSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMSecondViewController.h; sourceTree = "<group>"; };
 		4DF1615A1C816E9F003553A6 /* WMSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMSecondViewController.m; sourceTree = "<group>"; };
+		FC8EDB212159D22500F3AED9 /* WMBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMBadgeView.m; sourceTree = "<group>"; };
+		FC8EDB222159D22500F3AED9 /* WMMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMMenuItem.m; sourceTree = "<group>"; };
+		FC8EDB232159D22500F3AED9 /* WMBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMBadgeView.h; sourceTree = "<group>"; };
+		FC8EDB242159D22600F3AED9 /* WMMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMMenuItem.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,8 +230,10 @@
 		4DAB33DD1C12C6D0004EA0A4 /* WMMenuView */ = {
 			isa = PBXGroup;
 			children = (
-				4DAB33E01C12C6D0004EA0A4 /* WMMenuItem.h */,
-				4DAB33E11C12C6D0004EA0A4 /* WMMenuItem.m */,
+				FC8EDB232159D22500F3AED9 /* WMBadgeView.h */,
+				FC8EDB212159D22500F3AED9 /* WMBadgeView.m */,
+				FC8EDB242159D22600F3AED9 /* WMMenuItem.h */,
+				FC8EDB222159D22500F3AED9 /* WMMenuItem.m */,
 				4DAB33E21C12C6D0004EA0A4 /* WMMenuView.h */,
 				4DAB33E31C12C6D0004EA0A4 /* WMMenuView.m */,
 				4DAB33E41C12C6D0004EA0A4 /* WMProgressView.h */,
@@ -348,8 +353,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC8EDB252159D22600F3AED9 /* WMBadgeView.m in Sources */,
 				4DF1615B1C816E9F003553A6 /* WMSecondViewController.m in Sources */,
-				4DAB33EC1C12C6D0004EA0A4 /* WMMenuItem.m in Sources */,
 				4DAB33F01C12C6D0004EA0A4 /* WMPageController.m in Sources */,
 				4D38F75C1B29CA4600203BC9 /* AppDelegate.m in Sources */,
 				4DAB33EE1C12C6D0004EA0A4 /* WMProgressView.m in Sources */,
@@ -359,6 +364,7 @@
 				4DAB33ED1C12C6D0004EA0A4 /* WMMenuView.m in Sources */,
 				4DAB33EF1C12C6D0004EA0A4 /* WMScrollView.m in Sources */,
 				4D6BDF871B2DB3EE008282D1 /* WMLoopView.m in Sources */,
+				FC8EDB262159D22600F3AED9 /* WMMenuItem.m in Sources */,
 				4D6BDF861B2DB3EE008282D1 /* WMImageViewCell.m in Sources */,
 				4D60B5FA1B53A1E600BDD962 /* WMMainTableViewController.m in Sources */,
 				4D38F7591B29CA4600203BC9 /* main.m in Sources */,
