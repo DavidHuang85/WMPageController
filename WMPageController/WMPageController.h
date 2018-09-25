@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "WMMenuView.h"
 #import "WMScrollView.h"
+#import "WMBadgeView.h"
 
 @class WMPageController;
 
