@@ -34,7 +34,7 @@
     self.text = badge_str;
     //fit
     CGSize size = [badge_str sizeWithAttributes:@{NSFontAttributeName: self.font}];
-    self.frame = CGRectMake(0, 0, size.width+10, size.height);
+    self.frame = CGRectMake(0, 0, size.width+4, size.height);
 }
 
 @end
