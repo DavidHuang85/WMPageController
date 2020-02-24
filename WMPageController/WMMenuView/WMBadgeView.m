@@ -30,7 +30,7 @@
 
 - (void)loadBadgeText:(NSInteger)badge {
     //文本内容
-    NSString *badge_str = (badge>99)?@"99+":[NSString stringWithFormat:@"%ld", (long)badge];
+    NSString *badge_str = [NSString stringWithFormat:@"%ld", (long)badge];
     self.text = badge_str;
     //fit
     CGSize size = [badge_str sizeWithAttributes:@{NSFontAttributeName: self.font}];
